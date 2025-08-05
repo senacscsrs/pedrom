@@ -1,0 +1,46 @@
+.centralizado {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.titulo {
+    color: rgb(192, 0, 0);
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+.navegacao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* espaços maiores entre os links */
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+
+.navegacao .navegação {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    white-space: nowrap;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.navegacao .navegação:hover {
+    color: #007bff;
+}
+
+/* Margem para que o conteúdo principal não fique embaixo da navbar */
+.centralizado {
+    margin-top: 60px; /* Ajuste conforme altura da navbar */
+}
+
