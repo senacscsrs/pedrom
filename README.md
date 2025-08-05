@@ -1,5 +1,5 @@
 # pedrom
-# # Portfólio de Projetos – Pedro H B Machado
+# Portfólio de Projetos – Pedro H B Machado
 
 O repositório une meus principais projetos desenvolvidos durante o curso técnico e ensino médio no Senac, com foco em desenvolvimento web, lógica de programação e design de interfaces. Aqui você encontrará experimentos, sites, exercícios e protótipos de trabalhos reais ou simulados.
 
