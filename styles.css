@@ -44,3 +44,25 @@ body {
     margin-top: 60px; /* Ajuste conforme altura da navbar */
 }
 
+/* Texto de explicação do portfolio */
+.Portfolio {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: center;
+}
+h2 {
+    color: rgb(192, 0, 0);
+    font-size: 30px;
+}
+.explicativo {
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.6;
+}
+h1 {
+   color: rgb(192, 0, 0);
+    font-size: 40px;
+}
