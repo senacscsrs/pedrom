@@ -140,3 +140,20 @@ h3 {
 .lista {
     margin-bottom: 75px;
 }
+.email {
+    font-size: 18px;
+    color: #000000;
+    font-family: "Times New Roman", Times, serif;
+
+}
+.contato-txt {
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+h4 {
+    font-size: 30px;
+    color: rgb(192, 0, 0);
+    margin-bottom: 20px;
+}
