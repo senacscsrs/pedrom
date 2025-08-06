@@ -1,12 +1,27 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 80px; /* Adjust to offset for your fixed navbar height */
+}
+
+section {
+  scroll-snap-align: start;
+}
+
 .centralizado {
     text-align: center;
-    margin: 50px auto;
+    margin: 70px auto;
+    margin-top: 90px;
     
 }
 
 .titulo {
     color: rgb(192, 0, 0);
-    margin-top: 90px;
+    margin-top: 200px;
+    font-size: 48px; /* ou qualquer tamanho que queira */
 }
 
 body {
@@ -43,7 +58,8 @@ body {
 
 /* Margem para que o conteúdo principal não fique embaixo da navbar */
 .centralizado {
-    margin-top: 60px; /* Ajuste conforme altura da navbar */
+    text-align: center;
+    margin: 90px auto 0; /* top 90px, horizontal auto, bottom 0 */
 }
 
 /* Texto de explicação do portfolio */
@@ -65,3 +81,62 @@ h2 {
     line-height: 1.6;
 }
 
+.sobre {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.landing {
+    height: 100vh;;
+}
+h3 {
+    text-align: center;
+    margin: 50px auto;
+    font-size: 30px;
+    color: rgb(192, 0, 0);
+}
+
+.eu {
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.6;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 40px;
+}
+
+.lista1 {
+
+    text-align: center;
+    margin: 5px auto;
+    font-size: 18px;
+    color: #000000;
+    line-height: 5%;
+    padding-bottom: 20px;
+    width: 40%;
+   
+
+}
+.ftlondres {
+    padding-right: 20%;
+    margin-top: 200px;
+    width: 170px;
+    height: auto;
+    margin: 0;
+    padding-left: 20%;
+    size-adjust: 50%;
+}
+
+.textos1 {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.lista {
+    margin-bottom: 75px;
+}
