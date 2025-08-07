@@ -13,7 +13,7 @@ Estrutura do Repositório
 - `Alguns Projetos em Destaque`
 
 Tecnologias Usadas
-- HTML5
+- HTML
 - CSS
 - Git e GitHub Pages para versionamento e deploy
 
