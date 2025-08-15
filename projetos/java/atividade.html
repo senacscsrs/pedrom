@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Viagem</title>
+</head>
+
+<body>
+
+    <script>
+        let nome = prompt("Digite seu nome:");
+        let distancia = parseFloat(prompt("Digite a distância da viagem (em km):"));
+        let velocidadeMedia = parseFloat(prompt("Digite a velocidade média (em km/h):"));
+        let consumo = parseFloat(prompt("Digite o consumo do carro (km por litro):"));
+        let precoGasolina = parseFloat(prompt("Digite o preço da gasolina (por litro):"));
+        let tempoViagem = distancia / velocidadeMedia;
+        let litrosNecessarios = distancia / consumo;
+        let gastoTotal = litrosNecessarios * precoGasolina;
+
+        let mensagem = `Olá, ${nome}!
+Tempo estimado de viagem: ${tempoViagem.toFixed(2)} horas
+Litros de gasolina necessários: ${litrosNecessarios.toFixed(2)} L
+Gasto total: R$ ${gastoTotal.toFixed(2)}`;
+
+        alert(mensagem);
+        console.log(mensagem);
+    </script>
+</body>
+
+</html>
