@@ -1,0 +1,70 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 80px; /* Adjust to offset for your fixed navbar height */
+
+}
+
+body {
+    background-color: #d7d7c9;
+        text-align: center;
+}
+
+.desc {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.6;
+    padding-bottom: 20px;
+    width: 60%;
+    font-family: Arial, sans-serif, open-sans;
+    text-decoration: none; /* tira o sublinhado */
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px 0;
+    background-color: #1e306e; 
+    color: white;
+    text-decoration: none; /* tira o sublinhado */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.botao2 {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px 0;
+    background-color: #1e306e; 
+    color: white;
+    text-decoration: none; /* tira o sublinhado */
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.botao:hover {
+    background-color: #1e306e;
+    transform: scale(1.20); /* cresce um pouco ao passar o mouse */
+    text-align: center;
+}
+.botao2:hover {
+    background-color: #1e306e;
+    transform: scale(1.20); /* cresce um pouco ao passar o mouse */
+    text-align: center;
+}
+
+

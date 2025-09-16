@@ -2,38 +2,99 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Boair | Sua viagem começa aqui</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boair | Para onde vamos?</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Boair</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="passagens.html">Passagens</a></li>
-        <li><a href="carros.html">Carros</a></li>
-        <li><a href="hospedagem.html">Hospedagem</a></li>
-        <li><a href="checkout.html">Checkout</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <a href="index.html" class="maintitle">BOAIR</a>
+      <nav>
+        <ul>
+          <li><a href="perfil.html">Seu Perfil</a></li>
+          <li><a href="carros.html">Carros</a></li>
+          <li><a href="passagens.html">Passagens</a></li>
+          <li><a href="hospedagem.html">Hospedagem</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
+  <div class="main-title">
+  <p class="boairr">BOAIR</p>
+  </div>
+
   <main>
-    <section id="destaque">
-      <h2>Reserve sua próxima viagem em minutos!</h2>
-      <p>Boair conecta suas férias dos sonhos com opções de passagens, hotéis e aluguel de carros.</p>
-      <a href="passagens.html">Buscar Passagens</a>
-      <a href="hospedagem.html">Buscar Hospedagem</a>
-      <a href="carros.html">Alugar um Carro</a>
+    <section class="busca">
+      <h2>Para onde vamos?</h2>
+      <form>
+        <div class="form-group">
+          <label for="entrada">Entrada</label>
+          <input type="date" id="entrada" name="entrada">
+        </div>
+        <div class="form-group">
+          <label for="saida">Saída</label>
+          <input type="date" id="saida" name="saida">
+        </div>
+        <div class="form-group">  
+          <label for="origem">Origem</label>
+          <input type="text" id="origem" placeholder="Insira uma cidade">
+        </div>
+        <div class="form-group">
+          <label for="destino">Destino</label>
+          <input type="text" id="destino" placeholder="Insira uma cidade">
+        </div>
+        <button type="submit">Buscar</button>
+      </form>
     </section>
-    <section id="promo">
-      <h3>Ofertas Imperdíveis</h3>
-      <!-- Área para banners de promoções -->
+
+    <section class="ofertas">
+      <div class="destino">
+        <h3>Rio de Janeiro</h3>
+        <p>A partir de <strong>R$ 560</strong></p>
+        <p>Hotel popular: Copacabana Palace (+R$ 900/noite)</p>
+        <p>Carro: Econômico (+R$ 80/dia)</p>
+      </div>
+      <div class="destino">
+        <h3>Londres</h3>
+        <p>A partir de <strong>R$ 2.300</strong></p>
+        <p>Hotel popular: The Ritz (+R$ 2.000/noite)</p>
+        <p>Carro: Hatch (+R$ 120/dia)</p>
+      </div>
+      <div class="destino">
+        <h3>Nova York</h3>
+        <p>A partir de <strong>R$ 1.450</strong></p>
+        <p>Hotel popular: Marriott Marquis (+R$ 1.500/noite)</p>
+        <p>Carro: Sedan (+R$ 110/dia)</p>
+      </div>
     </section>
   </main>
+
   <footer>
-    <p>&copy; 2025 Boair. Todos os direitos reservados.</p>
+    <div class="footer-section">
+      <h5>CHATICES</h5>
+      <ul>
+        <li><a href="#">POLÍTICA DE PRIVACIDADE</a></li>
+        <li><a href="#">TERMOS DE USO</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h5>CONTA</h5>
+      <ul>
+        <li><a href="#">SEU PERFIL</a></li>
+        <li><a href="#">MINHAS PASSAGENS</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h5>SOMOS BOAIR</h5>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">SOBRE NÓS</a></li>
+        <li><a href="#">CONTATO</a></li>
+      </ul>
+    </div>
   </footer>
 </body>
 </html>

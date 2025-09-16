@@ -1,260 +1,671 @@
-/* Reset básico */
+/* ============================
+   ESTILOS GERAIS
+============================ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-  background: #f7f9fa;
-  font-family: 'Montserrat', Arial, sans-serif;
-  color: #222;
-  font-size: 16px;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Header e Navbar */
+/* ============================
+   HEADER COMUM
+============================ */
 header {
-  width: 100%;
-  background: #fff;
-  border-bottom: 2px solid #f1f1f1;
-  position: sticky;
-  top: 0;
-  z-index: 20;
-}
-
-header .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 14px 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background-color: #0077cc;
+  color: white;
+  padding: 15px 20px;
 }
 
 header h1 {
-  color: #03a9f4;
-  font-size: 2.1rem;
-  letter-spacing: 2px;
-  font-weight: 800;
-}
-
-h1 {
-  font-size: larger;
+  font-size: 24px;
   font-weight: bold;
-  text-align: center;
-  margin-top: 20px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 32px;
+  gap: 20px;
+  margin-top: 10px;
 }
 
-nav a {
+nav ul li a {
+  color: white;
   text-decoration: none;
-  color: #222;
-  font-weight: 600;
-  font-size: 17px;
-  padding: 8px 14px;
-  border-radius: 8px;
-  transition: background 0.2s, color 0.2s;
+  font-weight: 500;
+  font-size: 15px;
 }
 
-nav a:hover, nav a.active {
-  background: #e3f2fd;
-  color: #0288d1;
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
-/* Main Layout */
+/* ============================
+   INDEX.HTML
+============================ */
 main {
+  padding: 40px 20px;
   max-width: 1200px;
-  margin: 44px auto 0 auto;
-  padding: 0 24px 24px 24px;
+  margin: 0 auto;
 }
 
-/* Hero/Destaque */
-#destaque {
-  background: linear-gradient(92deg, #03a9f4 76%, #80d8ff 100%);
-  color: #fff;
-  text-align: center;
-  border-radius: 18px;
-  box-shadow: 0px 3px 24px rgba(3,169,244,0.13);
-  padding: 52px 20px;
-  margin-bottom: 40px;
-}
-
-#destaque h2 {
-  font-size: 2.6rem;
-  font-weight: 700;
-  margin-bottom: 18px;
-  line-height: 1.13;
-}
-
-#destaque p {
-  font-size: 1.3rem;
-  margin-bottom: 28px;
-}
-
-#destaque a {
-  display: inline-block;
-  background: #fff;
-  color: #03a9f4;
+/* Título principal */
+#destaque h1 {
+  font-size: 36px;
   font-weight: bold;
-  padding: 12px 30px;
-  margin: 5px 8px 0 0;
-  border-radius: 24px;
-  box-shadow: 0 2px 10px #03a8f460;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
+  color: #0077cc;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-#destaque a:hover {
-  background: #e3f2fd;
-  color: #0076a5;
-}
-
-/* Cards Promocionais ou Seções */
-section:not(#destaque) {
-  background: #fff;
-  border-radius: 14px;
-  padding: 36px 28px;
-  box-shadow: 0 1px 14px rgba(0,16,59,0.06);
+/* Formulário de busca */
+.busca {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
   margin-bottom: 40px;
 }
 
-section h2, section h3 {
-  margin-bottom: 21px;
-  color: #03a9f4;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-/* Sobre */
-#sobre img {
-  width: 100%;
-  max-width: 450px;
-  border-radius: 13px;
-  margin: 25px auto 0 auto;
-  display: block;
-}
-
-#sobre p {
-  font-size: 1.15rem;
-  line-height: 1.7;
-  color: #333;
-  margin-bottom: 18px;
-}
-
-/* Formulários */
-form {
-  max-width: 550px;
-  margin: 0 auto 22px auto;
-}
-
-form label {
-  font-weight: 600;
-  margin-bottom: 4px;
-  display: block;
-  color: #222;
-  letter-spacing: 1px;
-}
-
-form input,
-form select {
-  width: 100%;
-  border-radius: 7px;
-  border: 1.5px solid #b6eaff;
-  padding: 10px;
+.busca label {
   font-size: 16px;
-  margin-bottom: 16px;
-  background: #ecf8ff;
-  color: #222;
-  transition: border 0.2s;
-}
-
-form input:focus, form select:focus {
-  outline: none;
-  border-color: #03a9f4;
-}
-
-form button, .button, button {
-  background: #03a9f4;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 12px 32px;
-  font-size: 1.09rem;
-  font-weight: bold;
-  box-shadow: 0 2px 10px #03a8f455;
-  cursor: pointer;
-  margin-top: 8px;
-  transition: background 0.25s, color 0.25s;
-}
-
-form button:hover, .button:hover, button:hover {
-  background: #0288d1;
-  color: #fff;
-}
-
-/* Listas de resultados e cards de opções */
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  background: #f5fcff;
-  border-radius: 9px;
-  box-shadow: 0 1px 6px #03a9f410;
-  padding: 16px 22px;
-  margin-bottom: 15px;
-  font-size: 1.05rem;
   font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.busca input[type="text"],
+.busca input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.busca .full-width {
+  grid-column: span 2;
+}
+
+.busca button {
+  grid-column: span 2;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.busca button:hover {
+  background-color: #218838;
+}
+
+/* Promoções */
+#promo {
+  margin-top: 20px;
+}
+
+#promo h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
   color: #333;
 }
 
-/* Checkout */
-#checkout #resumo {
-  background: #e3f2fd;
-  border-radius: 9px;
-  padding: 17px 24px;
-  margin-top: 28px;
-  max-width: 370px;
+.promocoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-#checkout #resumo p {
-  color: #036b93;
-  font-size: 1.07rem;
+.promo-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 20px;
+  flex: 1 1 30%;
+  min-width: 280px;
 }
 
-#checkout #resumo h3 {
-  color: #03a9f4;
-  margin-bottom: 17px;
-}
-
-/* Footer */
-footer {
+.promo-card img {
   width: 100%;
-  background: #03a9f4;
-  color: #fff;
-  text-align: center;
-  font-size: 1.03rem;
-  font-weight: 500;
-  padding: 20px 0 16px 0;
-  letter-spacing: 1px;
-  border-top: 2px solid #b3e5fc;
-  box-shadow: 0 -1px 6px #03a8f455;
-  margin-top: 58px;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-/* Imagem Placeholder */
-img {
-  display: block;
-  margin: 16px auto;
-  border-radius: 11px;
-  max-width: 100%;
-  height: auto;
+.promo-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #0077cc;
 }
+
+.promo-card p {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 6px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* ============================
+   PERFIL.HTML
+============================ */
+.menu-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-icons h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu-icons .icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.perfil {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.perfil h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.perfil p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.perfil button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.perfil button:hover {
+  background-color: #005fa3;
+}
+
+.info {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.info h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.info p {
+  font-size: 15px;
+}
+
+.extras {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #e9f4ff;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 30%;
+  min-width: 250px;
+}
+
+.card h4 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ============================
+   FOOTER COMUM
+============================ */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+  min-width: 200px;
+}
+
+.footer-section h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 6px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   RESPONSIVO
+============================ */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .extras {
+    flex-direction: column;
+  }
+
+  .menu-icons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ============================
+   SOBRE NÓS - BOAIR
+============================ */
+.sobre {
+    height: 100vh;
+    align-items: center;
+}
+.sobre-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.sobre-container h1 {
+  font-size: 2rem;
+  color: #0A0A33; /* Azul profundo */
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sobre-container p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.sobre-container strong {
+  color: #B8860B; /* Dourado */
+  font-weight: 600;
+}
+
+/* Rodapé institucional */
+footer {
+  background-color: #0A0A33;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #FFD700; /* Dourado claro */
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 6px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .sobre-container {
+    padding: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ============================
+   ESTILOS GERAIS
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F8F8F8;
+  color: #0A0A33;
+  line-height: 1.5;
+}
+
+/* ============================
+   HEADER
+============================ */
+header {
+  background-color: #0A0A33;
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   BUSCA DE CARROS
+============================ */
+.carros-busca {
+  background-color: white;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.carros-busca h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.carros-busca form {
+  display: grid;
+  gap: 1rem;
+}
+
+.carros-busca label {
+  font-weight: 600;
+}
+
+.carros-busca input,
+.carros-busca select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.carros-busca button {
+  background-color: #008000;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carros-busca button:hover {
+  background-color: #006400;
+}
+
+/* ============================
+   PROMOÇÕES
+============================ */
+.carros-promo {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.carros-promo h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.promo-card {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.promo-card h4 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.promo-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ============================
+   FOOTER
+============================ */
+footer {
+  background-color: #0A0A33;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin-bottom: 1rem;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #FFD700;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   RESPONSIVO
+============================ */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.sobretext {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #333333;
+    margin-bottom: 20px;
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-top: 5%;
+}
+
+.soretexttitle {
+    font-size: 2rem;
+    color: #0A0A33; /* Azul profundo */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.destino {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.maintitle {
+    font-size: 1rem;
+    color: #ffffff; /* Azul profundo */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.boairr {
+    font-size: 3rem;
+    color: #0A0A33; /* Azul profundo */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+
