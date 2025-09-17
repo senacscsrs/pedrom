@@ -1,0 +1,1 @@
+alert("Este porfolio está em constante desenvolvimento, funções podem estar desativadas temporariamente")
