@@ -21,4 +21,4 @@ Obrigado por visitar meu repositório!
 
 Você pode encontrar meu portfolio em:
 
-🔗 [Meu Porfolio](https://senacscsrs.github.io/pedrom)
+🔗 [Meu Portfolio](https://senacscsrs.github.io/pedrom)
