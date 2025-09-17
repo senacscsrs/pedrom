@@ -3,7 +3,7 @@
 
 O repositório une meus principais projetos desenvolvidos durante o curso técnico e ensino médio no Senac, com foco em desenvolvimento web, lógica de programação e design de interfaces. Aqui você encontrará experimentos, sites, exercícios e protótipos de trabalhos reais ou simulados.
 
-Sobre Mim
+Sobre Mim 👤
 Sou estudante do Senac Ensino Médio e Técnico, apaixonado por tecnologia, design e desenvolvimento web. Tenho buscado aplicar o que aprendo na prática, com projetos variados que exploram HTML, CSS e muito mais.
 
 Estrutura do Repositório
@@ -12,9 +12,13 @@ Estrutura do Repositório
 - `imgs/ – Imagens utilizadas`
 - `Alguns Projetos em Destaque`
 
-Tecnologias Usadas
+Tecnologias Usadas 
 - HTML
 - CSS
 - Git e GitHub Pages para versionamento e deploy
 
 Obrigado por visitar meu repositório!
+
+Você pode encontrar meu portfolio em:
+
+🔗 [Meu Porfolio](https://senacscsrs.github.io/pedrom)
