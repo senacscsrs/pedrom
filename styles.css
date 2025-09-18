@@ -93,8 +93,8 @@ h2 {
 }
 
 .sobre {
-    height: 100vh;
-    display: flex;
+    display: flex; /* Makes the container a flexbox */
+    flex-direction: row-reverse; /* Reverses the order of the items */
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
@@ -113,14 +113,13 @@ h3 {
     color: #BFA181;
     font-size: 18px;
     line-height: 1.6;
-    padding-left: 10%;
-    padding-right: 10%;
     padding-bottom: 40px;
+    text-align: left;
 }
 
 .lista1 {
 
-    text-align: center;
+    text-align: left;
     margin: 5px auto;
     font-size: 18px;
     color: #BFA181;
@@ -132,24 +131,25 @@ h3 {
 }
 
 .ftlondres {
-    padding-right: 20%;
-    margin-top: 200px;
-    margin: 0;
-    padding-left: 20%;
-    size-adjust: 50%;
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px #7a7a7a;
+    flex-shrink: 0;
+
 
 }
 
 .textos1 {
-    width: 50%;
+    width: 40%; /* Adjust this percentage as needed */
     text-align: center;
     margin: 0 auto;
 }
 
 .lista {
     margin-bottom: 75px;
+    text-align: left;
 }
 
 .email {
@@ -235,7 +235,6 @@ section {
 
 
 h2,
-h3,
 h4 {
     margin-bottom: 30px;
     font-size: 30px;
@@ -247,4 +246,17 @@ h4 {
 p {
     margin-bottom: 20px;
     line-height: 1.6;
+}
+
+.links {
+  color: #BFA181;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.copy {
+    color: #BFA181;
+    text-align: center;
+    margin-top: 20px;
 }
