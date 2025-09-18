@@ -1,1 +1,1 @@
-alert("Este porfolio está em constante desenvolvimento, funções podem estar desativadas temporariamente")
+alert ("Atenção: Esta página está passando por atualizações constantes, algumas utilidades podem estar fora do padrão!")
