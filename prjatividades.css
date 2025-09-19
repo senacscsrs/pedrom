@@ -9,28 +9,30 @@ html, body {
 }
 
 body {
-    background-color: #d7d7c9;
+    background-color: #1C1C1C;
         text-align: center;
+     cursor: url('cursor dourado/Normal\ Select.cur'), auto;
 }
 
 .desc {
     text-align: center;
     margin: 20px auto;
     font-size: 20px;
-    color: #000000;
+    color: #BFA181;
     line-height: 1.6;
     padding-bottom: 20px;
     width: 60%;
     font-family: Arial, sans-serif, open-sans;
     text-decoration: none; /* tira o sublinhado */
+    
 }
 
 .botao {
     display: inline-block;
     padding: 12px 20px;
     margin: 10px 0;
-    background-color: #1e306e; 
-    color: white;
+    background-color: #BFA181; 
+    color: #1C1C1C;
     text-decoration: none; /* tira o sublinhado */
     font-size: 18px;
     font-weight: bold;
@@ -38,14 +40,15 @@ body {
     transition: 0.3s ease;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+     cursor: url('cursor dourado/Precision\ Select.cur'), auto;
 }
 
 .botao2 {
     display: inline-block;
     padding: 12px 20px;
     margin: 10px 0;
-    background-color: #1e306e; 
-    color: white;
+    background-color: #BFA181; 
+    color: #1C1C1C;
     text-decoration: none; /* tira o sublinhado */
     font-size: 10px;
     font-weight: bold;
@@ -53,16 +56,17 @@ body {
     transition: 0.3s ease;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: url('cursor dourado/Precision\ Select.cur'), auto;
 
 }
 
 .botao:hover {
-    background-color: #1e306e;
+    background-color: #BFA181;
     transform: scale(1.20); /* cresce um pouco ao passar o mouse */
     text-align: center;
 }
 .botao2:hover {
-    background-color: #1e306e;
+    background-color: #BFA181;
     transform: scale(1.20); /* cresce um pouco ao passar o mouse */
     text-align: center;
 }
